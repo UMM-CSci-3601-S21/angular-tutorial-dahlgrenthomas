@@ -10,13 +10,11 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  // tslint:disable-next-line: typedef
-  share() {
+  share(): void {
     window.alert('The product has been shared!');
   }
 
-  // tslint:disable-next-line: typedef
-  onNotify() {
+  onNotify(): void {
     window.alert('You will be notified when the product goes on sale');
   }
 }
