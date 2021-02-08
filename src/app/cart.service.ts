@@ -9,19 +9,19 @@ export class CartService {
   constructor(
     private http: HttpClient
   ) {}
-  addToCart(product) {
+  addToCart(product): void {
     this.items.push(product);
   }
 
-  getItems() {
+  getItems(): any {
     return this.items;
   }
 
-  clearCart() {
+  clearCart(): any {
     this.items = [];
     return this.items;
   }
-  getShippingPrices() {
+  getShippingPrices(): any {
     return this.http.get('./assets/shipping.json');
   }
 
