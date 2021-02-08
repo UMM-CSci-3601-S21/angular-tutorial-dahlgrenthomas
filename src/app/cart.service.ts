@@ -13,7 +13,7 @@ export class CartService {
     this.items.push(product);
   }
 
-  getItems(): any {
+  getItems(): any{
     return this.items;
   }
 
